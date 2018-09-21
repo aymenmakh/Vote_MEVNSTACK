@@ -1,0 +1,60 @@
+<html>
+<head>
+	<style>
+		body{background: #F5F5F5  ; font-family: Georgia, serif; color:black; padding :30px; }
+		h1{font-size:48px; letter-spacing: 2px; text-align: center}
+		input {width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;}
+	button {
+    background-color:#80CBC4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+	
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+		</style>
+	</head>
+
+
+<body>
+
+<h1> Information</h1>
+ 
+  <li>firstName :{{user.firstName}} </li>
+  <li>LastName :{{user.lastName  }} </li>
+  <li>Birthday :{{user.DateNaissance}} </li>
+  <li>Lieu Naissance :{{user.LieuNaissance }} </li>
+  <li>address Actuel :{{user.addressActuel }} </li>
+  <li>Profession :{{user.Profession }} </li>
+  <li>Date Cin :{{user.DateCin }} </li>
+  <li>address :{{user.address}} </li>
+  <!--<li>private Key :{{user.privateKey}} </li> -->
+  <li>cin :{{user.cin }} </li>
+   
+
+<form action="/api/user/tel" method="post">
+<input name="number" required=""  placeholder="Please Enter your number phone" />
+  <button type="submit" value="Register" > Register</button>
+</form>
+      <br>
+</form>
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+<head>
+		<style>
+		body{background: #F5F5F5 ; font-family: Georgia, serif; color:black; padding :30px; }
+		h1{font-size:48px; letter-spacing: 2px; text-align: center}
+		input {width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;}
+	button {
+    background-color: #80CBC4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+	font-family: Georgia, serif;
+    width: 100%;
+
+	
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+		</style>
+	</head>
+  <body>
+  <h1>Confirm your PIN </h1>
+<form action="/api/user/verify" method="post"><input name="pin" required="" type="number" placeholder="Enter ur PIN" />
+  <input name="requestId" type="hidden" type="tel" value="{{requestId}}" >
+  <input type="submit" value="Verify PIN" />
+</form>
+</body>

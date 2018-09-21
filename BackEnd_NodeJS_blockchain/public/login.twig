@@ -1,0 +1,13 @@
+{% extends 'layout.twig' %}
+{%block content%}
+<h1>Entrez votre cin</h1>
+<form action="/create" method="post">
+<label for="comment">Add a comment</label>
+<input type="text" name="comment" placeholder="add a comment"/>
+<input type="submit" value="save"/>
+</form>
+
+{% for c in comments %}
+<h3>{{c.title}}</h3>
+{%endfor%}
+{%endblock%}

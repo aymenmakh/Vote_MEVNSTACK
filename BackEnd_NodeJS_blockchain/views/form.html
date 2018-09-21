@@ -1,0 +1,41 @@
+	
+<html>
+	<head>
+		<style>
+		body{background: #F5F5F5 ; font-family: Georgia, serif; color:black; padding :30px; }
+		h1{font-size:48px; letter-spacing: 2px; text-align: center}
+		input {width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;}
+	button {
+    background-color: #80CBC4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+	font-family: Georgia, serif;
+    width: 100%;
+
+	
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+		</style>
+	</head>
+	<body><form  action="/api/user/authenticate" method="post">
+		
+		<h1>Login </h1>
+		<input type="text" name="cin" placeholder="Entrer votre CIN" required >
+		<button type="submit" value="save">Connect</button>
+	</form></body>
+</html>
